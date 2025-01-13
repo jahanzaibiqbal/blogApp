@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body onload="userProfile()">
+    <nav class="navbar" >
+        <ul>
+            <li><a href="./dashboard.html">Dashboard</a></li>
+            <li><a href="./blogs.html">All Blogs</a></li>
+            <li><a href="./myblogs.html">My Blogs</a></li>
+        </ul>
+    </nav>
+    
+    <h1>PROFILE PAGE</h1>
+    <!-- Profile Page Container -->
+
+    <div class="profile-container">
+        <h2>User Profile</h2>
+        
+        <!-- Display User Information -->
+        <div class="profile-info" >
+            <p><strong>FirstName:</strong> <span id="fname">Loading...</span></p>
+            <p><strong>LirstName:</strong> <span id="lname">Loading...</span></p>
+            <p><strong>Email:</strong> <span id="uemail">Loading...</span></p>
+            <p><strong>UID:</strong> <span id="uid">Loading...</span></p>
+        </div>
+
+
+</body>
+<script type="module" src="profile.js"></script>
+</html>

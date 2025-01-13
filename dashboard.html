@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body onload="authCheck();getPost()">
+    <nav class="navbar">
+        <ul>
+            <li><a href="./dashboard.html">Dashboard</a></li>
+            <li><a href="./myblogs.html">My Blogs</a></li>
+            <li><a href="./blogs.html">All Blogs</a></li>
+        </ul>
+    </nav>
+
+
+    <h1>DASHBOARD PAGE</h1>
+
+    <label for="title">Title</label>
+    <input type="text" id="title" placeholder="Enter blog title" required>
+
+    <!-- Description Field -->
+    <label for="desc">Description</label>
+    <textarea id="desc" placeholder="Enter blog description" required></textarea>
+      <br>
+    <!-- Privacy Checkbox -->
+    <label for="checkbox">
+        <input type="checkbox" id="checkbox"> Private
+    </label>
+
+        <div>
+        <button type="submit" onclick="blogPost()">BLOG POST</button>
+    </div>
+
+    <!-- <h1>BLOGS</h1>
+
+
+    <div id="parent">
+
+       
+
+    </div> -->
+
+
+</body>
+<script type="module" src="dashboard.js"></script>
+
+
+</html>
