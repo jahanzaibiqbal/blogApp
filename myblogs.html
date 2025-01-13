@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="dashboard.css">
 </head>
-<body onload="authCheck();getPost()">
+<body onload="authCheck(); getPost()">
 
     <nav class="navbar">
         <ul>
@@ -15,17 +15,22 @@
             <li><a href="./profile.html">Profile</a></li>
         </ul>
     </nav>
+
     <h1>MY BLOGS</h1>
 
-  
-
-    <div id="parent">
-
-       
-
+    <!-- Edit Form (Initially Hidden) -->
+    <div id="edit-form" style="display: none;">
+        <h3>Edit Blog Post</h3>
+        <input type="text" id="edit-title" placeholder="Title">
+        <textarea id="edit-desc" placeholder="Description"></textarea>
+        <label>
+            <input type="checkbox" id="edit-private"> Is Private
+        </label>
+        <button id="save-button">Save Changes</button>
+        <button onclick="document.getElementById('edit-form').style.display = 'none';">Cancel</button>
     </div>
 
-
+    <div id="parent"></div>
 
 </body>
 <script type="module" src="myblogs.js"></script>
